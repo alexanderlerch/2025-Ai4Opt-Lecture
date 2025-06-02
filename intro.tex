@@ -1,0 +1,168 @@
+        %\begin{frame}{introduction}{music information retrieval}
+        %\end{frame}
+        \begin{frame}{introduction}{content in audio signals}
+             \begin{columns}
+             \column{.4\textwidth}
+                examples for audio signal content
+                \begin{itemize}
+                    \item   \textbf{speech}
+                        \begin{itemize}
+                            \item   text information
+                            \item   speaker
+                            \item   recording environment
+                            \item   \dots
+                        \end{itemize}
+                    \item   \textbf{music}
+                        \begin{itemize}
+                            \item   melody
+                            \item   harmony
+                            \item   structure
+                            \item   instruments
+                            \item   mood
+                            \item   genre
+                            \item   \dots
+                        \end{itemize}
+                \end{itemize}
+             \column{.6\textwidth}
+                \figwithmatlab{Waveform}
+                %\begin{figure}
+                    %\includegraphics[scale=.4]{waveform}
+                %\end{figure}
+             \end{columns}
+        \end{frame}
+
+        \begin{frame}{introduction}{audio content analysis --- research fields}
+            \vspace{-7mm}
+            \begin{columns}
+            \column{.7\textwidth}
+            \begin{itemize}
+                \item   \textbf{speech} analysis
+                    \begin{itemize}
+                        \item   speech recognition
+                        \item   speech emotion recognition, \ldots
+                    \end{itemize}
+                \smallskip
+                \item<2->   \textbf{urban sound} analysis
+                    \begin{itemize}
+                        \item   noise pollution monitoring
+                        \item   audio surveillance, \ldots
+                    \end{itemize}
+                \smallskip
+                \item<3->   \textbf{industrial sound} analysis
+                    \begin{itemize}
+                        \item   monitoring the state of mechanical devices
+                        \item   monitoring the health of livestock, \ldots
+                    \end{itemize}
+                \smallskip
+                \item<4->   \only<5->{\textcolor{gtgold}}{\textbf{musical audio} analysis}
+                    \begin{itemize}
+                        \item   music transcription
+                        \item   music classification, \ldots
+                    \end{itemize}
+            \end{itemize}
+            \column{.3\linewidth}
+                \begin{figure}%
+                    \includegraphics[width=\columnwidth]{ai_w_headphones}%
+                \end{figure}
+            \end{columns}
+        \end{frame}
+        
+        \begin{frame}{introduction}{musical audio vs.\ other audio}
+            \vspace{-3mm}
+            \begin{columns}
+            \column{.7\textwidth}
+            \textbf{music} \ldots
+            \begin{itemize}
+                \item   is a \textbf{wide band} signal(\emph{unlike many other audio signals})
+                \item<2->   comprises both \textbf{tonal and noise} components(\emph{like most audio signals})
+                \item<3->   combines \textbf{multiple sound sources}(\emph{unlike speech, like urban sound})
+                \item<4->   is a \textbf{poly-timbral} mixture(\emph{nlike industrial sound})
+                \item<5->  sources are \textbf{harmonically related and synchronous} (\emph{unlike other multi-source signals})
+                \item<6->   has a highly structured \textbf{sequential} language that is \textbf{abstract} (\emph{unlike speech})
+            \end{itemize}
+            \column{.3\linewidth}
+                \begin{figure}%
+                    \includegraphics[width=\columnwidth]{music}%
+                \end{figure}
+            \end{columns}
+        \end{frame}
+        
+       \begin{frame}{introduction}{use cases}
+            \begin{itemize}
+                \item	\textbf{music browsing and music discovery} 
+                    \begin{itemize}
+                        \item   search \& retrieval, recommendation, similarity, interfaces (e.g., QBH)
+                    \end{itemize}
+                \smallskip
+                \item<2->	\textbf{music consumption} 
+                    \begin{itemize}
+                        \item   creative music listening
+                    \end{itemize}
+                \smallskip
+                \item<3->	 \textbf{music production}
+                    \begin{itemize}
+                        \item   adaptive parametrization, enhancements of creative process
+                    \end{itemize}
+                \smallskip
+                \item<4->	\textbf{music education}
+                    \begin{itemize}
+                        \item   musically intelligent software tutoring
+                    \end{itemize}
+                \smallskip
+                \item<5->	\textbf{generative music}
+                    \begin{itemize}
+                        \item   interactive soundtracks (games, video)
+                    \end{itemize}
+            \end{itemize}
+        \end{frame}
+         
+        
+%\begin{frame}{musical communication}{chain of musical communication}
+      %\vspace{-3mm}
+        %\begin{figure}
+                %\centering
+                %\begin{picture}(140,35)
+                    %%boxes
+                    %%\only<1>{\color{gtgold}
+                    %{\put(0,30){\ovalbox{\footnotesize{\parbox{20mm}{\vspace{2mm}\centering{\only<1>{\textcolor{gtgold}}{composition}}}}}}}
+                    %%}
+                    %\put(30,30){\ovalbox{\footnotesize{\parbox{20mm}{\vspace{2mm}\centering{\only<2>{\textcolor{gtgold}}{performance}}}}}}
+                    %\put(60,30){\ovalbox{\footnotesize{\parbox{20mm}{\vspace{2mm}\centering{\only<3>{\textcolor{gtgold}}{production}}}}}}
+                    %\put(90,30){\ovalbox{\footnotesize{\parbox{20mm}{\vspace{2mm}\centering{\only<4>{\textcolor{gtgold}}{distribution}}}}}}
+                    %\put(120,30){\ovalbox{\footnotesize{\parbox{20mm}{\vspace{2mm}\centering{\only<4>{\textcolor{gtgold}}{consumption}}}}}}
+        %
+                    %% horizontal
+                    %\put(22.4,30.6){\vector(1,0){7.8}}
+                    %\put(52.4,30.6){\vector(1,0){7.8}}
+                    %\put(82.4,30.6){\vector(1,0){7.8}}
+                    %\put(112.4,30.6){\vector(1,0){7.8}}
+                %\end{picture}
+            %\end{figure}
+            %\vspace{-27mm}
+    %\begin{itemize}
+        %\item<1-> \textbf{creation of musical ideas} (``score'')
+            %\begin{itemize}
+                %\item   defines style and idea
+            %\end{itemize}
+        %\smallskip
+        %\item<2-> \textbf{realization of musical ideas} into acoustical rendition 
+            %\begin{itemize}
+                %\item   interpretation, modification, addition, and dismissal of score information
+                %\item   unique acoustic representation of score
+            %\end{itemize}
+        %\smallskip
+        %\item<3-> \textbf{recording, mixing, and editing} (in case of record media)
+            %\begin{itemize}
+                %\item   editing and splicing of recorded data; timbre, equalization choices
+                %\item   not separable from performance in a recording
+            %\end{itemize}
+        %\smallskip
+        %\item<4-> \textbf{distribution \& listening}
+            %\begin{itemize}
+                %\item   music recommendation and discovery
+            %\end{itemize}
+    %\end{itemize}
+    %\inserticon{directions}
+%\end{frame}
+
+
